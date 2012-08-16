@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{55CBC10D-B894-4B4A-A086-12E346A6FF42}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ooRuleML</RootNamespace>
+    <AssemblyName>ooRuleML</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ooRuleML\And.cs" />
+    <Compile Include="ooRuleML\AndOrFormula.cs" />
+    <Compile Include="ooRuleML\Assert.cs" />
+    <Compile Include="ooRuleML\AssertFormula.cs" />
+    <Compile Include="ooRuleML\Atom.cs" />
+    <Compile Include="ooRuleML\Body.cs" />
+    <Compile Include="ooRuleML\Declare.cs" />
+    <Compile Include="ooRuleML\Degree.cs" />
+    <Compile Include="ooRuleML\Equivalent.cs" />
+    <Compile Include="ooRuleML\Exist.cs" />
+    <Compile Include="ooRuleML\ForAll.cs" />
+    <Compile Include="ooRuleML\ForAllFormula.cs" />
+    <Compile Include="ooRuleML\Head.cs" />
+    <Compile Include="ooRuleML\Implies.cs" />
+    <Compile Include="ooRuleML\Integrity.cs" />
+    <Compile Include="ooRuleML\Oid.cs" />
+    <Compile Include="ooRuleML\Operator.cs" />
+    <Compile Include="ooRuleML\Or.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ooRuleML\Protect.cs" />
+    <Compile Include="ooRuleML\Query.cs" />
+    <Compile Include="ooRuleML\QueryFormula.cs" />
+    <Compile Include="ooRuleML\RuleML.cs" />
+    <Compile Include="ooRuleML\Slot.cs" />
+    <Compile Include="ooRuleML\Torso.cs" />
+    <Compile Include="ooRuleML\Warden.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
